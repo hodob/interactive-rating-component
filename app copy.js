@@ -1,40 +1,21 @@
 const numbers = document.querySelectorAll('.num');
 const submit = document.querySelector('.submit');
 let numSelected = 0;
-let actived = false;
-console.log(numbers[1].textContent)
-
-for (let i = 0; i < numbers.length; i++) {
-  // numbers[i].addEventListener('click', () => numSelected = i + 1);
-  if (i + 1 !== numbers[i].textContent) {
-    console.log("sfafd")
-
-  }
-}
-
-
-
-
 //mouser click
 
 for (let i = 0; i < numbers.length; i++) {
   numbers[i].addEventListener('click', () => numbers[i].classList.toggle('num_click'));
-
-  //numbers
-
-  //mouse over
-  numbers[i].addEventListener('mouseenter', () => numbers[i].classList.add('num_hover'));
-
-  //mouser leave
-  numbers[i].addEventListener('mouseleave', () => numbers[i].classList.remove('num_hover'));
 }
 
-
-
-
-
-
-
+//numbers
+//mouse over
+for (let i = 0; i < numbers.length; i++) {
+  numbers[i].addEventListener('mouseenter', () => numbers[i].classList.add('num_hover'));
+}
+//mouser leave
+for (let i = 0; i < numbers.length; i++) {
+  numbers[i].addEventListener('mouseleave', () => numbers[i].classList.remove('num_hover'));
+}
 
 //sumbit
 //submit over

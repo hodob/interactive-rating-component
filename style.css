@@ -70,8 +70,8 @@ body {
 }
 
 .submit {
-  background-color: white;
-  color: hsl(25, 97%, 53%);
+  background-color: orange;
+  color: white;
   text-align: center;
   line-height: 40px;
   font-family: 'Outfit', sans-serif;
@@ -87,4 +87,9 @@ body {
 .ratingNumber .num_click {
   background-color: rgb(112, 121, 130);
   color: white;
+}
+
+.submit_hover {
+  background-color: white;
+  color: orange;
 }
